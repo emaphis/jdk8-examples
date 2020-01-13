@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author emaphis
  */
-public class Stream02 {
+public class Streams02 {
 
     public static final int MAX = 1000000;
 
