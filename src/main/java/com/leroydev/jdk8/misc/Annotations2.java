@@ -1,5 +1,7 @@
 /*
- * More JDK8 Anotation features
+ * More JDK8 Anotation features - Type annotations
+ * The JDK doesn't include a type annotations feature by defualt.
+ * This one adds : www.checkerframework.org
  */
 package com.leroydev.jdk8.misc;
 
