@@ -12,6 +12,13 @@ More stream examples
 
 <https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/>
 
+Concurrency
+
+<https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/>
+
+
+
+
 ## What's new in jdk8:
 
 <https://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html>
