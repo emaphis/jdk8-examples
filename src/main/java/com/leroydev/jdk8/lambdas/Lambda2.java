@@ -15,17 +15,29 @@ public class Lambda2 {
         T convert(F from);
     }
 
-    static class Something{
+    static class Something {
         String startsWith(String s) {
             return String.valueOf(s.charAt(0));
         }
     }
 
+    @FunctionalInterface
     interface PersonFactory<P extends Person> {
         P create(String firstName, String lastName);
     }
 
     public static void main(String[] args) {
+        // Old JDKs - annonymous clasees
+        Converter<String, Integer> integerConverter0 = new Converter<String, Integer>() {
+            @Override
+            public Integer convert(String from) {
+                return Integer.valueOf(from);
+            }
+        };
+        Integer converted0 = integerConverter0.convert("123");
+        System.out.println(converted0);
+
+        // Lambdas are type of funtional interface
         Converter<String, Integer> integerConverter1 = (from) -> Integer.valueOf(from);
         Integer converted1 = integerConverter1.convert("123");
         System.out.println(converted1);

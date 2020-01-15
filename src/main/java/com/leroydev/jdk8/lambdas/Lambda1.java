@@ -17,7 +17,7 @@ public class Lambda1 {
     public static void main(String[] args) {
         List<String> names1 = Arrays.asList("Charley", "Sabria", "Bosley", "Zeno");
 
-        // pre-jdk8
+        // pre-jdk8 - anonymous class.
         Collections.sort(names1, new Comparator<String>() {
             @Override
             public int compare(String a, String b) {

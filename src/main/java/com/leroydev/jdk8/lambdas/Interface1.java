@@ -1,5 +1,5 @@
 /*
- * Default Methods for Interfaces.
+ * Default and Static Methods for Interfaces.
  */
 package com.leroydev.jdk8.lambdas;
 
@@ -17,6 +17,7 @@ public class Interface1 {
             return Math.sqrt(positive(a));
         }
 
+        // A static method - only callable from inside the interface.
         static int positive(int a) {
             return a > 0 ? a : 0;
         }
@@ -27,6 +28,7 @@ public class Interface1 {
         Formula formula1 = new Formula() {
             @Override
             public double calculate(int a) {
+                //int ret = positive(a); // impossible
                 return sqrt(a * 100);
             }
         };
@@ -38,7 +40,7 @@ public class Interface1 {
 
         // Default methods cannot be accessed from within lambda expressions.
         // The following code does not compile:
-        //Formula formulat = (a) -> sqrt(a * 100);
+        // Formula formulat = (a) -> sqrt(a * 100);
     }
 
 }

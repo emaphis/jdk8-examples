@@ -35,6 +35,9 @@ public class Lambda3 {
                     return String.valueOf(from);
                 };
 
+        String convert2 = stringConverter2.convert(3);
+        System.out.println(convert2);
+
         String[] array = new String[1];
         Converter<Integer, String> stringConverter3 =
                 (from) -> {
